@@ -26,3 +26,21 @@ Body: {
 
 Method POST localhost:8080/pautas/{id_pauta}
 
+### Salvar uma sessão
+
+Method POST localhost:8080/sessoes
+
+Body: {
+ "pauta":{
+  "id":1
+ },
+ "tempo":5
+}
+
+caso nao enviar o tempo no body, ele vai ser 1 minuto por default
+
+{
+ "pauta":{
+  "id":1
+ }
+}
