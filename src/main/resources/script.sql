@@ -9,3 +9,13 @@ CREATE TABLE `condominio`.`pauta` (
   `estado` INT,
   PRIMARY KEY (`id`)
 );
+
+CREATE TABLE `condominio`.`sessao_votacao` (
+   `id` INT NOT NULL AUTO_INCREMENT,
+   `pauta_id` INT NOT NULL,
+   `tempo_votacao` INT NULL,
+   `dt_abertura` DATETIME NOT NULL,
+   PRIMARY KEY (`id`),
+   FOREIGN KEY (pauta_id) REFERENCES Pauta(id)
+);
+

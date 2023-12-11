@@ -14,7 +14,7 @@ public class PautaEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String descricao;
-    @Column(name="data_inicio")
-    private LocalDateTime dtInicio;
+    @Column(name="dt_criacao")
+    private LocalDateTime dtCriacao;
     private Integer estado;
 }

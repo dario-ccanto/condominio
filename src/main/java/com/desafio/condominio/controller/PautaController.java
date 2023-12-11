@@ -25,5 +25,4 @@ public class PautaController {
     public void cadastrar(@RequestBody PautaEntity ce) {
         pautaService.cadastrar(ce);
     }
-
 }

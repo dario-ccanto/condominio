@@ -27,7 +27,7 @@ public class PautaServiceImpl implements PautaService {
 
     @Override
     public void cadastrar(PautaEntity ce) {
-        ce.setDtInicio(LocalDateTime.now());
+        ce.setDtCriacao(LocalDateTime.now());
         ce.setEstado(Constants.ATIVO);
         pautaRepository.save(ce);
     }
