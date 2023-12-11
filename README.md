@@ -69,3 +69,12 @@ Body:
  "cpf":"09467954107",
  "voto":"N"
 }
+
+Caso se envie no body mais de 1 votação com mesmo CPF ele vai retornar 400
+
+### Obter resultado de uma pauta
+
+Method GET localhost:8080/pauta/{id}/resultado
+
+id: é o id da pauta
+
