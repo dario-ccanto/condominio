@@ -4,6 +4,10 @@ Esse projeto tem funcionalidades para a gestão de sessões de votaçãoes.
 ## Tecnologias usadas
 O projeto usa o java JDK 17 e o banco de dados mysql como persistence data.
 
+## Considerações
+O projeto foi implementado basado em microserviçõs com as camdas MVC, pode ser melhorado usando kafka para
+o procesamento da votação mediante um broker e usando spring cloud
+
 ## Rodamento projeto
 1. Clonar el projeto do repositorio github mediante o comando: git clone https://github.com/dario-ccanto/condominio.git
 2. Ubicarse en el banch development mediante o comando: git checkout development
