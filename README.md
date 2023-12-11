@@ -30,7 +30,8 @@ Method POST localhost:8080/pautas/{id_pauta}
 
 Method POST localhost:8080/sessoes
 
-Body: {
+Body: 
+{
  "pauta":{
   "id":1
  },
@@ -43,4 +44,28 @@ caso nao enviar o tempo no body, ele vai ser 1 minuto por default
  "pauta":{
   "id":1
  }
+}
+
+### Salvar uma votação
+
+Method POST localhost:8080/votacoes
+
+Body: 
+{
+"sessaoVotacao":{
+"id":1
+},
+"cpf":"09467954109",
+"voto":"S"
+}
+
+Caso el votação é Não
+
+Body:
+{
+ "sessaoVotacao":{
+ "id":1
+ },
+ "cpf":"09467954107",
+ "voto":"N"
 }
